@@ -28,10 +28,12 @@ switch($language){
 }
 
 // 三項演算子の条件分岐
-$number === 10;
+$number = 4;
 
-// $answer = ($number >= 5) ? "$numberは5以上です" . "<br>":"$numberは5以下です" . "<br>"; //画面に現れなかった
+var_dump($number);
 
-$answer = ($number > 5)?"TRUE.<br>":"FALSE.<br>"; //間違った答えが表示された $numberは10なので、5以上なのに、5以下の表示がされた
+$answer = ($number > 5) ? "5以上です" . "<br>":"5以下です" . "<br>"; //画面に現れなかった
+
+// $answer = ($number > 5)?"TRUE.<br>":"FALSE.<br>"; //間違った答えが表示された $numberは10なので、5以上なのに、5以下の表示がされた
 
 echo $answer;
